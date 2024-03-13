@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hello.springstart.SpringStartApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-13T13:15:38" hostname="LAPTOP-FPLA27SM" time="2.238">
+  <properties/>
+  <testcase name="contextLoads()" classname="hello.springstart.SpringStartApplicationTests" time="2.238"/>
+  <system-out><![CDATA[22:15:33.180 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [hello.springstart.SpringStartApplicationTests]: SpringStartApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:15:33.458 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration hello.springstart.SpringStartApplication for test class hello.springstart.SpringStartApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-03-13T22:15:34.699+09:00  INFO 15196 --- [spring-start] [    Test worker] h.s.SpringStartApplicationTests          : Starting SpringStartApplicationTests using Java 17.0.8 with PID 15196 (started by Choo in C:\Users\Choo\projects\spring-start)
+2024-03-13T22:15:34.703+09:00  INFO 15196 --- [spring-start] [    Test worker] h.s.SpringStartApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2024-03-13T22:15:37.257+09:00  INFO 15196 --- [spring-start] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-03-13T22:15:38.038+09:00  INFO 15196 --- [spring-start] [    Test worker] h.s.SpringStartApplicationTests          : Started SpringStartApplicationTests in 4.036 seconds (process running for 6.738)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
