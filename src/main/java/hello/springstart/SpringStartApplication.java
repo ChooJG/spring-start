@@ -1,3 +1,4 @@
+//이거 하위 패키지만 spring bean으로 자동 등록
 package hello.springstart;
 
 import org.springframework.boot.SpringApplication;
