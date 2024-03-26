@@ -1,14 +1,27 @@
 package hello.springstart;
 
+import hello.springstart.repository.JdbcMemberRepository;
+import hello.springstart.repository.JdbcTemplateMemberRepository;
 import hello.springstart.repository.MemberRepository;
 import hello.springstart.repository.MemoryMemberRepository;
 import hello.springstart.service.MemberService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import javax.sql.DataSource;
 
 //스프링 실행시 빈 등록
 @Configuration
 public class SpringConfig {
+
+    private DataSource dataSource;
+
+    //application.properties에 자동으로 연결 (의존성 주입)
+    @Autowired
+    public SpringConfig(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Bean
     public MemberService memberService(){
@@ -17,7 +30,9 @@ public class SpringConfig {
 
     @Bean
     public MemberRepository memberRepository(){
-        return new MemoryMemberRepository();
+        //return new MemoryMemberRepository();
+        //return new JdbcMemberRepository(dataSource);
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 
 }
