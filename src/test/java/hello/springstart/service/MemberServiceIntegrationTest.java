@@ -33,7 +33,6 @@ public class MemberServiceIntegrationTest {
 
         //then
         Member findMember = memberService.findOne(id).get();
-        System.out.println("findMember = " + findMember.getId());
         assertThat(findMember.getName()).isEqualTo(member.getName());
     }
 
